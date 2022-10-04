@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuffle Game</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="d-flex justify-content-around align-items-center bg-primary shadow-lg p-3 mb-5 bg-primary rounded" id="body">
+        <div class="modal-fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Word Scramble</h5>
+              </div>
+              <div class="modal-body">
+                <input type="text" id="nameInp" class="form-control" placeholder="Enter your name to start">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="modalDoneBtn" data-dismiss="modal">CONTINUE</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="main position-relative px-5 py-4 bg-white rounded-3 shadow-lg p-3 mb-5 bg-body rounded">
+        <div class="d-flex flex-column justify-content-around align-items-center  border border-light p-3 mb-2">
+            <h1>Word Scramble</h1>
+            <p><b>Player</b> <span id="playerName" class="text-danger">Mayowa</span></b></p>
+            <p class="bg-light timer-body py-1 px-1 pl-3"><b>Timer: <span id="time"></span></b></p>
+        </div>
+        <div class="d-flex  align-items-around p-3 border-bottom border-left border-right border-white mb-2 flex-column">
+            <div class="d-flex justify-content-around align-items-center">
+                <button class="btn btn-dark form-control" id="startBtn"><b>START</b></button>
+            </div>
+        </div>
+        
+        <div class="d-flex flex-column justify-items-around p-3 border-bottom border-white  mb-2">
+            <input type="text" id="scrambledWordInp" class="form-control mb-1 bg-white" readonly>
+            <input type="text" id="unScrambledWordInp" class="form-control" placeholder="Enter the correct word">
+        </div>
+        <div class="d-flex justify-content-around align-items-center border border-light py-1 px-1 mb-2">
+            <button class="btn btn-primary" id="submitBtn"><b> SUBMIT</b></button>
+        </div>
+        <div class="px-2 py-2 border border-light">
+            <span><b>Score(%)</b></span>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">0%</div>
+            </div>
+        </div>
+        <div class="modal-backdrop fade show" hidden="true" id="modalB"></div>
+        <div id="startCount" class="align-items-center justify-content-center"><span id="countNumb"></span></div>
+        <div class=" justify-content-around align-items-center p-2 flex-column position-absolute border-rounded" id="contentbx"></div>
+    </div>
+  <!-- </div> 
+</div> -->
+</body>
+<script src="script.js"></script>
+</html>

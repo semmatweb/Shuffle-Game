@@ -1,0 +1,9 @@
+#contentbx{
+    /* position: absolute; */
+    position: absolute;
+    background-color: wheat;
+    top: 35%;
+    left: 0%;
+    width: 100%;
+    display: none;
+}
