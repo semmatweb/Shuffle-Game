@@ -1,5 +1,5 @@
 'use strict'
-let wordArr = ['addition','meeting','number','exchange','canvas','garden','position','feather','comfort', 'tongue','expansion','country','group','taste','store','field','friend','pocket','needle','expert','statement','second','library']
+let wordArr = ['additions','wordpress','number','exchange','canvas','garden','position','feather','comfort', 'tongue','expansion','country','group','taste','store','source','friend','pocket','needle','expert','statement','second','library']
 let randomNo = ''
 let scrambledWord=''
 let mp3,timeCheck, word,originalWord,min,sec,pausedMin,pausedSec,tUpdate;
